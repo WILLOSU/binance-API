@@ -1,0 +1,102 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0c0e12;
+    color: #f0b90b;
+    background-image: url('watermark.png'); /* Caminho para sua marca d'água */
+    background-position: center;
+    background-size: contain; /* ou 'cover' dependendo do efeito desejado */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0c0e12;
+}
+
+header .logo {
+    max-width: 150px; /* Aumentando o tamanho da logo */
+    margin-bottom: 20px;
+}
+
+/* Container principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+.side-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    margin-bottom: 10px
+}
+
+/* Relógio digital */
+.digital-clock {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Contador */
+.counter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0c0e12;
+    color: #f0b90b;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+    .side-panel {
+        top: 10px;
+        right: 10px;
+    }
+
+    .digital-clock {
+        font-size: 1.5em;
+    }
+
+    .updated {
+        background-color: lightgreen; /* Cor de fundo alterada para verde claro */
+        transition: background-color 0.5s ease; /* Transição suave da cor de fundo */
+    }
+    
+}
